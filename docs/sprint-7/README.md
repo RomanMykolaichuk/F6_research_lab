@@ -37,3 +37,6 @@
 - [Кейс A: наскрізний маршрут](../sprint-9/README.md) — від джерела до перевірюваної задачі.
 - [Заповнена матриця літератури](../sprint-9/case-a-literature.csv) і [карта прогалини](../sprint-9/case-a-gap.md) — з найсильнішими контрприкладами.
 - [Заповнений паспорт](../sprint-9/case-a-research-passport.md), [числова вправа](../sprint-9/case-a-worked-example.md) і [матриця доказів](../sprint-9/case-a-traceability.md) — із позначенням ще не виконаних перевірок.
+
+## Додаткові практикуми
+[Кейси B–E та маршрути](../sprint-12/README.md); [рубрика](../sprint-11/rubric.md).

@@ -1,0 +1,26 @@
+name: Sprint 10 experiment
+on:
+  pull_request:
+  push:
+    branches: [sprint-10-reproducible-experiment]
+permissions:
+  contents: read
+jobs:
+  experiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: docs/sprint-10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: python experiment.py > results.json
+      - run: python -m json.tool results.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sprint-10-results
+          path: docs/sprint-10/results.json
